@@ -1,0 +1,145 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.login {
+    margin-left: 60em;
+}
+
+.container {
+    text-align: center;
+    z-index: 1;
+    padding: 10px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #2a2a2a;
+    border-radius: 25px 0 0 25px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    color: #ffffff;
+    background-color: #d90429;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #ff073a;
+}
+
+.wave-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* OLAS */
+
+.container {
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    font-family: Arial;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(168, 47, 47, 0.8);
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    left: -180px;
+    bottom: 0;
+    width: 2402px;
+    background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
+    animation: wave 5s ease-in-out infinite alternate; /* ANIMACIÓN QUE CAMBIA LA ALTURA */
+}
+
+.wave.a {
+    background-position: 0 -854px;
+}
+
+.wave.b {
+    background-position: 0 -427px;
+    animation-delay: .6s;
+}
+
+.wave.c {
+    background-position: 0 0;
+    animation-delay: 1.2s;
+}
+
+/* ANIMACION */
+@keyframes wave {
+    0% {
+        height: 300px; /* ALTURA INICIAL */
+    }
+    50% {
+        height: 200px; /* ALTURA MÁS BAJA */
+    }
+    100% {
+        height: 250px; /* ALTURA MÁS ALTA */
+    }
+}
